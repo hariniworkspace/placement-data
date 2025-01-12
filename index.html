@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="style.css" rel ="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+
+</head>
+<style>
+    
+        .first
+        {
+            background-color: white;
+            
+        }
+        .first2
+        {
+            color: black;
+        }
+        .fa-th-large
+        {
+            color: black;
+        }
+    
+</style>
+<body>
+    <div class="sidebar">
+        <ul>
+            <li>
+                <a class ="first"href="index.html" >
+                    <i class="fas fa-th-large"></i>
+                    <div class="first2">Dashboard</div>
+                </a>
+            </li>
+            <li>
+                <a href="student.html">
+                    <i class="fas fa-user-graduate"></i>
+                    Student
+                </a>
+            </li>
+            <li>
+                <a href="staff.html">
+                    <i class="fas fa-chalkboard-teacher"></i>
+                    <div>Staffs</div>
+                </a>
+            </li>
+            <li>
+                <a href="analytics.html">
+                    <i class="fas fa-chart-bar"></i>
+                    <div>Analytics</div>
+                </a>
+            </li>
+            <div class="help"></div>
+            <li>
+                
+                <a href="help.html">
+                    <i class="fas fa-question"></i>
+                    <div>Help</div>
+                </a>
+            </li>
+        </div>
+        </ul>
+    </div>
+    <div class="container">
+        <div class="topbar">
+            <div class="logo">
+                <h2>VCET</h2>
+            </div>
+            <div class="search">
+                <input type="text" id="search" placeholder="search here">
+                <label for="search"><i class="fas fa-search"></i></label>
+            </div>
+            <i class="fas fa-bell"></i>
+            <div class="user">
+             <img src="./images/user.webp" height="40px" style="margin-left: 10px; margin-top:5px">
+            </div>
+             
+        </div>
+       <div class="main" id="main">
+            <div class="cards">
+                <div class="card">
+                    <div class="card-content">
+                        <div class="number">1217</div>
+                        <div class="card-name">Students</div>
+                    </div>
+                    <div class="icon-box">
+                        <i class="fas fa-user-graduate"></i>
+                    </div>
+
+                </div>
+           
+            <div class="card">
+                <div class="card-content">
+                    <div class="number">30</div>
+                    <div class="card-name">Faculties</div>
+                </div>
+                <div class="icon-box">
+                    <i class="fas fa-chalkboard-teacher"></i>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-content">
+                    <div class="number">7</div>
+                    <div class="card-name">Supporting Staffs</div>
+                </div>
+                <div class="icon-box">
+                    <i class="fa-solid fa-handshake-angle"></i>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-content">
+                    <div class="number"> 57.79 </div>
+                    <div class="card-name" style="margin-top: 5px;">Analytics</div>
+                </div>
+                <div class="icon-box">
+                    <i class="fas fa-chart-bar" style="margin-left:30px;"></i>
+                </div>
+            </div>
+            </div>
+            <div class="charts">
+                <div class="chart">
+                    <h2>Student's coding Track (sem-wise)</h2>
+                    <canvas id="linechart"></canvas>
+                </div>
+                <div class="chart" id="doughnut-chart">
+                    <h2>Invlovement in placements</h2>
+                    <canvas id="doughnut"></canvas>
+                </div>
+            </div>
+        </div>
+    </div>
+  
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.7/dist/chart.umd.min.js"></script>
+    <script src="index.js"></script>
+    <script src="index2.js"></script>
+</body>
+</html>
